@@ -2,7 +2,7 @@ from django.db import models
 
 
 class ESP(models.Model):
-    ip = models.GenericIPAddressField(null=True)
+    ip = models.GenericIPAddressField(null=True, unique=True)
 
 
 class SensorData(models.Model):
