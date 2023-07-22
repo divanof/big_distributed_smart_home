@@ -20,8 +20,11 @@ from bdsh_site import api_views
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('class/<int:lamp_id>/', api_views.LampDelete.as_view()),
+    path('class/', api_views.LightCreate.as_view()),
     path('api/lightlamp/<int:lamp_id>/', api_views.LampView.as_view()),
     path('api/lightlamp/create/', api_views.LampCreate.as_view()),
     path('api/lightlamp/<int:lamp_id>/delete/', api_views.LampDelete.as_view()),
+    path('api/lightsensor/<int:light_id>/', api_views.LightView.as_view()),
+    path('api/lightsensor/create/', api_views.LightCreate.as_view()),
+    path('api/lightsensor/<int:light_id>/delete/', api_views.LightDelete.as_view()),
 ]
