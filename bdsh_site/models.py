@@ -1,5 +1,16 @@
 from django.db import models
 
+from enum import Enum
+
+
+class SensorTypes(Enum):
+    LIGHTLAMP = 1
+    LIGHT_SENSOR = 2
+    REED = 3
+    TEMPERATURE_SENSOR = 4
+    HUMIDITY_SENSOR = 5
+    LEAKAGE_SENSOR = 6
+
 
 class ESP(models.Model):
     ip = models.GenericIPAddressField(null=True, unique=True)

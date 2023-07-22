@@ -16,12 +16,12 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
-from bdsh_site import views
+from bdsh_site import api_views
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('api/lightlamp/<int:lamp_id>/', views.lamp),
-    path('api/lightlamp/create/', views.lamp_create),
-    path('api/lightlamp/<int:lamp_id>/delete/', views.lamp_delete),
-    path('api/light/<int:light_sensor_id>/', views.light),
+    path('class/<int:lamp_id>/', api_views.LampDelete.as_view()),
+    path('api/lightlamp/<int:lamp_id>/', api_views.LampView.as_view()),
+    path('api/lightlamp/create/', api_views.LampCreate.as_view()),
+    path('api/lightlamp/<int:lamp_id>/delete/', api_views.LampDelete.as_view()),
 ]
