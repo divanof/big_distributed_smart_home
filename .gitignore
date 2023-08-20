@@ -1,6 +1,13 @@
 # Created by https://www.toptal.com/developers/gitignore/api/python,windows,linux,macos,virtualenv,django,pycharm+all,visualstudiocode
 # Edit at https://www.toptal.com/developers/gitignore?templates=python,windows,linux,macos,virtualenv,django,pycharm+all,visualstudiocode
 
+static/css/style_card_dark.css
+static/css/style_card_dark.css.map
+static/css/style_card_light.css
+static/css/style_card_light.css.map
+static/css/style_main.css
+static/css/style_main.css.map
+
 ### Django ###
 *.log
 *.pot
