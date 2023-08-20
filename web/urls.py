@@ -21,4 +21,7 @@ from bdsh_site import views
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('api/lightlamp/<int:lamp_id>/', views.lamp),
+    path('', views.index_page, name='index'),
+    path('settings/', views.settings_page, name='settings'),
+    path('login/', views.login_page, name='login'),
 ]
