@@ -1,0 +1,159 @@
+@use 'style_base';
+
+@mixin decor($height: 100%, $align_item: center){
+    height: $height;
+    align-self: flex-end;
+    border-bottom-right-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: $align_item;
+}
+
+
+
+.card{
+    width: 365px;
+    height: 365px;
+    flex-shrink: 0;
+    border-radius: 20px;
+    background: #3F312A;
+    display: flex;
+    justify-content: space-between;
+
+    position: absolute;
+}
+
+.left_block {
+    display: inline-flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 24px;
+    margin-left: 25px;
+    margin-top: 20px;
+}
+
+
+.decor.bed {
+    position: absolute;
+    bottom: 0px;
+    right: 0;
+    border-bottom-right-radius: 20px;
+}
+
+.decor.kit {
+    @include decor;
+
+    
+    .tumb{
+        border-bottom-right-radius: 20px;
+    }
+}
+
+.decor.liv {
+    @include decor($height: auto, $align_item: flex-end);
+
+    .couch{
+        border-bottom-right-radius: 20px;
+    }
+    
+    
+}
+
+.lights {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    border-bottom-right-radius: 20px;
+}
+
+.decor.bath {
+    @include decor;
+
+    .tumb{
+        border-bottom-right-radius: 20px;
+    }
+
+    .lamp {
+        padding-top: 0.2em;
+        padding-right: 1.2em;
+        align-self: flex-end;
+    }
+
+    .mirror {
+        align-self: flex-end;
+    }
+}
+
+
+.icon_lamp{
+    width: 50px;
+    height: 50px;
+    flex-shrink: 0;
+    margin: 15px;
+    margin-top: 20px;
+    
+}
+
+.icon_circle{
+    width: 60px;
+    height: 60px;
+    flex-shrink: 0;
+    fill: #3F312A;
+    margin: 10px;
+}
+
+
+.header_1 {
+    @include style_base.h1($theme: #DBCBBC);
+}
+
+
+
+.header_2 {
+    @include style_base.h2($theme: #DBCBBC, $size: 40px);
+}
+
+.text {
+    @include style_base.text($theme: #DBCBBC);
+    
+}
+
+.temp {
+    width: 172px;
+    height: 80px;
+    flex-shrink: 0;
+    border-radius: 20px;
+    background: #3F312A;
+    box-shadow: 5px 4px 4px 0px #201001 inset, -4px -6px 4px 0px #6A5A4B inset;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.light {
+    width: 172px;
+    height: 80px;
+    border-radius: 50px;
+    background: #3F312A;
+    box-shadow: 5px 4px 4px 0px #201001 inset, -4px -6px 4px 0px #6A5A4B inset;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+.leaks {
+    width: 167px;
+    height: 50px;
+    flex-shrink: 0;
+    border-radius: 20px;
+    background: #3F312A;
+    box-shadow: 5px 4px 4px 0px #201001 inset, -4px -6px 4px 0px #6A5A4B inset;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+

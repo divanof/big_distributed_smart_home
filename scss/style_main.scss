@@ -1,0 +1,131 @@
+@use 'style_base';
+
+.login{
+    display: flex;
+    padding-bottom: 0px;
+    flex-direction: column;
+    align-items: center;
+    gap: 2em;
+    background: #EEE7DF;
+    margin: 0px;
+
+    .header_2 {
+        @include style_base.h2($theme: #6C4B5E, $size: 35px)
+    }
+}
+
+::placeholder {
+    color : rgba(108, 75, 94, 0.30);
+}
+
+input:focus {
+    outline: none
+}
+
+.header {
+    display: flex;
+    align-items: center;
+
+    justify-content: center;
+    background: rgba(108, 75, 94, 0.10);
+    width: 100%;
+    padding: 0.5em;
+    
+    
+
+}
+
+.but_night{
+    display: flex;
+    width: 5em;
+    height: 5em;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0.2em;
+    align-items: center;
+    border-radius: 0.6em;
+    background: #E1D7D2;
+
+    .night_mode {
+        width: 4em;
+        height: 4em;
+        flex-shrink: 0;
+    }
+}
+
+
+
+.header_1 {
+    @include style_base.h1($theme: #6C4B5E);
+}
+
+.header_2 {
+    @include style_base.h2($theme: #6C4B5E)
+}
+
+
+.enter {
+    display: flex;
+    padding: 5em 3em;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2em;
+    border-radius: 3em;
+    background: #EEE7DF;
+    box-shadow: 10px 10px 20px 0px #B0988E inset, -10px -10px 20px 0px #FDF6EE inset;
+}
+
+.info {
+    display: flex;
+    align-items: center;
+    gap: 1.5em;
+    width: 24em;
+    box-shadow: 5px 5px 10px 0px #B0988E inset, -5px -5px 10px 0px #FDF6EE inset;
+    border-radius: 1em;
+    padding: 1em;
+
+    .input {
+        @include style_base.h2($theme: rgba(108, 75, 94, 1));
+        width: 10em;
+        border: 0px;
+        background-color: rgba($color: #000000, $alpha: 0);
+    }
+
+    .block {
+        display: flex;
+        align-items: center;
+        gap: 1.5em;
+        width: 24em;
+        .input {
+            @include style_base.h2($theme: rgba(108, 75, 94, 1));
+            width: 8em;
+            border: 0px;
+            background-color: rgba($color: #000000, $alpha: 0);
+        }
+    }
+
+    
+}
+
+
+.icon {
+    width: 3em;
+    height: 3em;
+}
+
+.log {
+    display: flex;
+    width: 23em;
+    padding: 1.5em;
+    justify-content: center;
+    align-items: center;
+    border-radius: 1.5em;
+    background: #6C4B5E;    
+    border: 0px;
+
+    .header_2 {
+        @include style_base.h2($theme: #EEE7DF);
+    }
+}
+
