@@ -1,11 +1,11 @@
 @font-face {
     font-family: Jura;
-    src: url(../static/Jura-Bold.ttf);
+    src: url(../fonts/Jura-Bold.ttf);
 }
   
 @font-face {
     font-family: Jura_text;
-    src: url(../static/Jura-Medium.ttf);
+    src: url(../fonts/Jura-Medium.ttf);
 }
 
 @mixin h1 ($theme: Black) {
