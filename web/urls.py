@@ -16,9 +16,27 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
-from bdsh_site import views
+from bdsh_site import views, api_views
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('api/lightlamp/<int:lamp_id>/', views.lamp),
+    path('api/lightlamp/<int:sensor_id>/', api_views.LampView.as_view()),
+    path('api/lightlamp/create/', api_views.LampCreate.as_view()),
+    path('api/lightlamp/<int:sensor_id>/delete/', api_views.LampDelete.as_view()),
+    path('api/light/<int:sensor_id>/', api_views.LightView.as_view()),
+    path('api/light/create/', api_views.LightCreate.as_view()),
+    path('api/light/<int:sensor_id>/delete/', api_views.LightDelete.as_view()),
+    path('api/reed/<int:sensor_id>/', api_views.ReedView.as_view()),
+    path('api/reed/create/', api_views.ReedCreate.as_view()),
+    path('api/reed/<int:sensor_id>/delete/', api_views.ReedDelete.as_view()),
+    path('api/temp/<int:sensor_id>/', api_views.TempView.as_view()),
+    path('api/temp/create/', api_views.TempCreate.as_view()),
+    path('api/temp/<int:sensor_id>/delete/', api_views.TempDelete.as_view()),
+    path('api/humidity/<int:sensor_id>/', api_views.HumView.as_view()),
+    path('api/humidity/create/', api_views.HumCreate.as_view()),
+    path('api/humidity/<int:sensor_id>/delete/', api_views.HumDelete.as_view()),
+    path('api/leakage/<int:sensor_id>/', api_views.LeakageView.as_view()),
+    path('api/leakage/create/', api_views.LeakageCreate.as_view()),
+    path('api/leakage/<int:sensor_id>/delete/', api_views.LeakageDelete.as_view()),
+    path('api/get_device/', api_views.DeviceView.as_view())
 ]
