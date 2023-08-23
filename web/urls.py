@@ -38,5 +38,8 @@ urlpatterns = [
     path('api/leakage/<int:sensor_id>/', api_views.LeakageView.as_view()),
     path('api/leakage/create/', api_views.LeakageCreate.as_view()),
     path('api/leakage/<int:sensor_id>/delete/', api_views.LeakageDelete.as_view()),
-    path('api/get_device/', api_views.DeviceView.as_view())
+    path('api/get_device/', api_views.DeviceView.as_view()),
+    path('', views.index_page, name='index'),
+    path('settings/', views.settings_page, name='settings'),
+    path('login/', views.login_page, name='login'),
 ]

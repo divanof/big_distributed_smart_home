@@ -1,0 +1,96 @@
+@font-face {
+    font-family: Jura;
+    src: url(static/Jura-Bold.ttf);
+  }
+  
+
+.card{
+    width: 365px;
+    height: 365px;
+    flex-shrink: 0;
+    border-radius: 20px;
+    background: #DBCBBC;
+    display: flex;
+    justify-content: space-between;
+}
+
+.left_block {
+    display: inline-flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 24px;
+    margin-left: 25px;
+    margin-top: 20px;
+}
+.decor_lamp {
+    width: 140px;
+    height: 249px;
+    flex-shrink: 0;
+    align-self: flex-end;
+    border-bottom-right-radius: 20px;
+}
+
+.icon_lamp{
+    width: 50px;
+    height: 50px;
+    flex-shrink: 0;
+    margin: 15px;
+    
+}
+
+.icon_circle{
+    width: 60px;
+    height: 60px;
+    flex-shrink: 0;
+    fill: #3F312A;
+    margin: 10px;
+}
+
+
+.header_1 {
+    color: #3F312A;
+    /* header 1 */
+    font-family: Jura;
+    font-size: 50px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+
+
+.header_2 {
+    color: #3F312A;
+    /* header 2 */
+    font-family: Jura;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    margin: 0;
+}
+
+.temp {
+    width: 172px;
+    height: 80px;
+    flex-shrink: 0;
+    border-radius: 20px;
+    background: #DBCBBC;
+    box-shadow: 5px 4px 4px 0px #B0988E inset, -4px -6px 4px 0px #E8D8C9 inset;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.light {
+    width: 172px;
+    height: 80px;
+    border-radius: 50px;
+    background: #DBCBBC;
+    box-shadow: 5px 4px 4px 0px #B0988E inset, -4px -6px 4px 0px #E8D8C9 inset;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}

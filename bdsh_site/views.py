@@ -8,8 +8,19 @@ from bdsh_site.models import SensorData
 from bdsh_site.serializers import SensorDataSerializer
 
 
-def index(request):
-    return HttpResponse("lorem")
+def index_page(request):
+    context = {}
+    return render(request, 'index.html', context)
+
+
+def settings_page(request):
+    context = {}
+    return render(request, 'settings.html', context)
+
+
+def login_page(request):
+    context = {}
+    return render(request, 'login.html', context)
 
 
 @api_view(['GET', 'POST'])

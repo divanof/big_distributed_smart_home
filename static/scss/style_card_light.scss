@@ -1,0 +1,143 @@
+@use 'style_base';
+
+@mixin decor($height: 100%, $align_item: center){
+    height: $height;
+    align-self: flex-end;
+    border-bottom-right-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: $align_item;
+}
+
+
+
+.card{
+    width: 365px;
+    height: 365px;
+    flex-shrink: 0;
+    border-radius: 20px;
+    background: #DBCBBC;
+    display: flex;
+    justify-content: space-between;
+}
+
+.left_block {
+    display: inline-flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 24px;
+    margin-left: 25px;
+    margin-top: 20px;
+}
+
+
+.decor.bed {
+        @include decor($height: auto);
+    }
+
+.decor.kit {
+    @include decor;
+
+    .tumb{
+        border-bottom-right-radius: 20px;
+    }
+}
+
+.decor.liv {
+    @include decor($height: auto, $align_item: flex-end);
+
+    .couch{
+        border-bottom-right-radius: 20px;
+    }
+}
+
+.decor.bath {
+    @include decor;
+
+    .tumb{
+        border-bottom-right-radius: 20px;
+    }
+
+    .lamp {
+        padding-top: 0.2em;
+        padding-right: 1.2em;
+        align-self: flex-end;
+    }
+
+    .mirror {
+        align-self: flex-end;
+    }
+}
+
+
+.icon_lamp{
+    width: 50px;
+    height: 50px;
+    flex-shrink: 0;
+    margin: 15px;
+    
+}
+
+.icon_circle{
+    width: 60px;
+    height: 60px;
+    flex-shrink: 0;
+    fill: #3F312A;
+    margin: 10px;
+}
+
+
+.header_1 {
+    @include style_base.h1($theme: #3F312A);
+}
+
+
+
+.header_2 {
+    @include style_base.h2($theme: #3F312A, $size: 40px);
+}
+
+.text {
+    @include style_base.text($theme: #463627);
+    
+}
+
+.temp {
+    width: 172px;
+    height: 80px;
+    flex-shrink: 0;
+    border-radius: 20px;
+    background: #DBCBBC;
+    box-shadow: 5px 4px 4px 0px #B0988E inset, -4px -6px 4px 0px #E8D8C9 inset;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.light {
+    width: 172px;
+    height: 80px;
+    border-radius: 50px;
+    background: #DBCBBC;
+    box-shadow: 5px 4px 4px 0px #B0988E inset, -4px -6px 4px 0px #E8D8C9 inset;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+.leaks {
+    width: 167px;
+    height: 50px;
+    flex-shrink: 0;
+    border-radius: 20px;
+    background: #DBCBBC;
+    box-shadow: 5px 4px 4px 0px #B0988E inset, -4px -6px 4px 0px #E8D8C9 inset;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
