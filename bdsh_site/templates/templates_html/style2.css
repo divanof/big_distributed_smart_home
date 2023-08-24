@@ -1,0 +1,146 @@
+@font-face {
+    font-family: Jura;
+    src: url(static/Jura-Bold.ttf);
+  }
+  
+body{
+    display: flex;
+}
+
+.card1{
+    width: 290px;
+    height: 450px;
+    flex-shrink: 0;
+    border-radius: 20px;
+    background: rgba(123, 184, 177, 0.61);
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    display: block;
+    padding: 40px;
+    margin: 20px;
+    justify-content: space-between;
+}
+
+.card2{
+    width: 290px;
+    height: 450px;
+    flex-shrink: 0;
+    border-radius: 20px;
+    background: #EAD5BD;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    display: block;
+    padding: 40px;
+    margin: 20px;
+    justify-content: space-between;
+}
+
+.row{
+    width: 200px;
+    height: 75px;
+    display: flex;
+    justify-content: space-between;
+    margin: 30px;
+}
+
+.left_block {
+    display: inline-flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 24px;
+    margin-left: 25px;
+    margin-top: 20px;
+}
+.decor_lamp {
+    width: 140px;
+    height: 249px;
+    flex-shrink: 0;
+    align-self: flex-end;
+    border-bottom-right-radius: 20px;
+}
+
+.icon_lamp{
+    width: 50px;
+    height: 50px;
+    flex-shrink: 0;
+    display: flex;
+}
+
+.icon_temperature{
+    width: 56px;
+    height: 74px;
+    flex-shrink: 0;
+    display: flex;
+    margin-left: 40px;
+}
+
+.icon_humidity{
+    width: 59px;
+    height: 79px;
+    flex-shrink: 0;
+    margin-left: 32px;
+    fill: linear-gradient(205deg, #75ABA6 0%, #437774 87.65%);
+    filter: drop-shadow(-4px 4px 5px rgba(35, 90, 87, 0.50)) drop-shadow(1px -1px 8px rgba(255, 255, 255, 0.60));
+}
+
+.icon_leaks{
+    width: 70px;
+    height: 80px;
+    margin-left: 27px;
+    flex-shrink: 0;filter: drop-shadow(-4px 4px 5px rgba(35, 90, 87, 0.50)) drop-shadow(1px -1px 8px rgba(255, 255, 255, 0.60));
+}
+
+.icon_circle{
+    width: 39px;
+    height: 39px;
+    flex-shrink: 0;
+    fill: #3F312A;
+    margin: 10px;
+}
+
+
+.header_1 {
+    color: #3F312A;
+    /* header 1 */
+    font-family: Jura;
+    font-size: 50px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+
+
+.header_2 {
+    color: #000;
+    text-align: center;
+    /* header 1 */
+    font-family: Jura;
+    font-size: 50px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.temp {
+    width: 172px;
+    height: 80px;
+    flex-shrink: 0;
+    border-radius: 20px;
+    background: #DBCBBC;
+    box-shadow: 5px 4px 4px 0px #B0988E inset, -4px -6px 4px 0px #E8D8C9 inset;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.selector {
+    width: 114px;
+    height: 53px;
+    flex-shrink: 0;
+    border-radius: 50px;
+    background: #DBCBBC;
+    box-shadow: 5px 4px 4px 0px #B0988E inset, -4px -6px 4px 0px #E8D8C9 inset;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    margin-top: 8px;
+}
