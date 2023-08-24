@@ -5,6 +5,9 @@ welcome to the club
 ## Компиляция SCSS файлов
 1. установить npm
 2. установить sass
+   ```bash
+   npm install -g sass
+   ```
 3. выполнить команды:
    ```bash
    sass static/scss/style_card_dark.scss static/css/style_card_dark.css
