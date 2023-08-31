@@ -28,8 +28,8 @@ class LampView(APIView):
         this_sensor = get_object_or_404(SensorData, id=sensor_id)
         if this_sensor.sensor_type != SensorTypes.LIGHTLAMP.value:
             return Response({'reason': 'This sensor is not light lamp'}, status=status.HTTP_400_BAD_REQUEST)
-        value_param = request.POST.get('value', None)
-        from_param = request.POST.get('from', None)
+        value_param = request.data.get('value', None)
+        from_param = request.data.get('from', None)
 
         if value_param is None:
             return Response({'reason': 'Invalid value param', 'status': 400}, status=status.HTTP_400_BAD_REQUEST)

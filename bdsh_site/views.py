@@ -9,18 +9,20 @@ from bdsh_site.serializers import SensorDataSerializer
 
 
 def index_page(request):
-    context = {}
-    return render(request, 'index.html', context)
+    return render(request, 'index.html')
 
 
 def settings_page(request):
-    context = {}
-    return render(request, 'settings.html', context)
+    return render(request, 'settings.html')
 
 
 def login_page(request):
-    context = {}
-    return render(request, 'login.html', context)
+    return render(request, 'login.html')
+
+
+def switch_page(request):
+    context = {'sensor_id': 1}
+    return render(request, 'switch_light.html', context)
 
 
 @api_view(['GET', 'POST'])
